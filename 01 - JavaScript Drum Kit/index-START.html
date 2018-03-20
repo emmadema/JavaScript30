@@ -58,7 +58,13 @@
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
 <script>
-
+  let buttons = document.getElementsByClassName("key");
+    for (let i = 0; i > buttons.length; i++) {
+      let singleButton = buttons[i];
+      singleButton.addEventListener('keydown', function(){
+        console.log("working");
+      }); 
+    }
 </script>
 
 
